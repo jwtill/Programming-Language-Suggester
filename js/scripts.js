@@ -1,55 +1,61 @@
-function add(number1, number2) {
-  return number1 + number2;
+function add (num1, num2, num3, num4, num5, num6, num7) {
+  const total = num1 + num2 + num3 + num4 + num5 + num6 + num7;
+  return total;
 }
 
-function subtract(number1, number2) {
-  return number1 - number2;
-}
 
-function multiply(number1, number2) {
-  return number1 * number2;
-}
 
-function divide(number1, number2) {
-  return number1 / number2;
-}
+
 
 $(document).ready(function() {
-  $("form#add").submit(function(event) {
+  $("form#userInfo").submit(function(event) {
     event.preventDefault();
-    const number1 = parseInt($("#add1").val());
-    const number2 = parseInt($("#add2").val());
-    const result = add(number1, number2);
-    alert(result);
+
+    // for name
+    const name = ($("#name").val());
+    console.log(name);
+
+    // for experience
+    const experience = parseInt($("input:radio[name=experience]:checked").val());
+    
+    console.log(typeof experience);
+
+    // for front end/back end
+    const frontBack = parseInt($("input:radio[name=where]:checked").val());
+    // console.log("Front or Back:");
+    // console.log(frontBack);
+    console.log(typeof frontBack);
+
+    // for location
+    const location = parseInt($("#location").val());
+    // console.log("Location:");
+    // console.log(location);
+    console.log(typeof location);
+
+    // for hat choice
+    const hat1 = parseInt($("input:checkbox[name=hat1]:checked").val());
+    console.log(typeof hat1);
+    const hat2 = parseInt($("input:checkbox[name=hat2]:checked").val());
+    const hat3 = parseInt($("input:checkbox[name=hat3]:checked").val());
+    const hat4 = parseInt($("input:checkbox[name=hat4]:checked").val());
+
+    
+    // console.log("Hat:");
+    // console.log(hat1);
+    // console.log(hat2);
+    // console.log(hat3);
+    // console.log(hat4);
+
+    const result = add(experience, frontBack, location, hat1, hat2, hat3, hat4);
+    console.log("The results are:");
+    console.log(typeof result);
+    console.log(result);
+    
+
+    
+
+
+    // alert(result);
   });
 });
 
-$(document).ready(function() {
-  $("form#subtract").submit(function(event) {
-    event.preventDefault();
-    const number1 = parseInt($("#subtract1").val());
-    const number2 = parseInt($("#subtract2").val());
-    const result = subtract(number1, number2);
-    alert(result);
-  });
-});
-
-$(document).ready(function() {
-  $("form#multiply").submit(function(event) {
-    event.preventDefault();
-    const number1 = parseInt($("#multiply1").val());
-    const number2 = parseInt($("#multiply2").val());
-    const result = multiply(number1, number2);
-    alert(result);
-  });
-});
-
-$(document).ready(function() {
-  $("form#divide").submit(function(event) {
-    event.preventDefault();
-    const number1 = parseInt($("#divide1").val());
-    const number2 = parseInt($("#divide2").val());
-    const result = divide(number1, number2);
-    alert(result);
-  });
-});
