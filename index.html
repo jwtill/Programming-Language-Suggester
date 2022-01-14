@@ -12,28 +12,35 @@
   <div class="container">
     
       <form id="userInfo">
+
         <div class="form-group">
-          <h4>Front or Back End?</h4>
-          <input type="radio" id="frontEnd" name="where" value="clientSide">
-          <label for="html">Front-end</label><br>
-          <input type="radio" id="backEnd" name="where" value="serverSide">
-          <label for="css">CSS</label><br>
+          <label for="name">Name:</label>
+          <input id="name" class="form-control" type="text">
         </div>
 
         <div class="form-group">
           <h4>How much experience do you have?</h4>
-          <input type="radio" id="experience" name="experience" value="a little">
+          <input type="radio" id="aLittle" name="experience" value="1">
           <label for="html">A Little</label><br>
-          <input type="radio" id="experience" name="experience" value="a lot">
+          <input type="radio" id="aLot" name="experience" value="2">
           <label for="experience">A Lot</label><br>
         </div>
 
         <div class="form-group">
-          <label for="add2">2nd number:</label>
-          <input id="add2" class="form-control" type="text">
+          <h4>Front or Back End?</h4>
+          <input type="radio" id="frontEnd" name="where" value="1">
+          <label for="html">Front-end</label><br>
+          <input type="radio" id="backEnd" name="where" value="2">
+          <label for="css">CSS</label><br>
         </div>
-        <button type="submit" class="btn btn-primary">Add!</button>
+
+        
+        <button type="submit" class="btn btn-primary">Submit!</button>
       </form>
+
+      <div>
+        <p>You are apt to be a <span id = "result"></span>developer!</p>
+      </div>
 
       
 
