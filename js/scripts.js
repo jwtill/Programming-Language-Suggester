@@ -1,6 +1,5 @@
 function add (num1, num2, num3, num4, num5, num6, num7) {
-  const total = num1 + num2 + num3 + num4 + num5 + num6 + num7;
-  return total;
+  return num1 + num2 + num3 + num4 + num5 + num6 + num7;
 }
 
 
@@ -13,11 +12,12 @@ $(document).ready(function() {
 
     // for name
     const name = ($("#name").val());
-    console.log(name);
+    // console.log(name);
 
     // for experience
     const experience = parseInt($("input:radio[name=experience]:checked").val());
-    
+    console.log(experience);
+    console.log("is a");
     console.log(typeof experience);
 
     // for front end/back end
@@ -55,7 +55,7 @@ $(document).ready(function() {
     
 
 
-    // alert(result);
+    
   });
 });
 
