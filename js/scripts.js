@@ -1,5 +1,5 @@
-function add (num1, num2, num3, num4, num5, num6, num7) {
-  return num1 + num2 + num3 + num4 + num5 + num6 + num7;
+function add (num1, num2, num3, num4) {
+  return num1 + num2 + num3 +num4;
 }
 
 
@@ -33,11 +33,12 @@ $(document).ready(function() {
     console.log(typeof location);
 
     // for hat choice
-    const hat1 = parseInt($("input:checkbox[name=hat1]:checked").val());
+    const hat1 = parseInt($("input[type='checkbox']:checked").val());
     console.log(typeof hat1);
-    const hat2 = parseInt($("input:checkbox[name=hat2]:checked").val());
-    const hat3 = parseInt($("input:checkbox[name=hat3]:checked").val());
-    const hat4 = parseInt($("input:checkbox[name=hat4]:checked").val());
+    console.log(hat1);
+    // const hat2 = parseInt($("input:checkbox[name=hat2]:checked").val());
+    // const hat3 = parseInt($("input:checkbox[name=hat3]:checked").val());
+    // const hat4 = parseInt($("input:checkbox[name=hat4]:checked").val());
 
     
     // console.log("Hat:");
@@ -46,7 +47,7 @@ $(document).ready(function() {
     // console.log(hat3);
     // console.log(hat4);
 
-    const result = add(experience, frontBack, location, hat1, hat2, hat3, hat4);
+    const result = add(experience, frontBack, location, hat1);
     console.log("The results are:");
     console.log(typeof result);
     console.log(result);
