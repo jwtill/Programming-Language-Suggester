@@ -67,14 +67,24 @@ $(document).ready(function() {
       hat4 = 0;
     }
     
-    console.log(hat1);
-    console.log(hat2);
-    
 
     const result = add(experience, frontBack, location, hat1, hat2, hat3, hat4);
-    console.log("The results are:");
-    console.log(result);
+    if (result <= 3) {
+      console.log("js");
+      $("#resultSentence").show();
+      $("#appropriateLanguage").text("Javascript");
+    }
+    else if (result > 3 && result < 8)
+    {
+      $("#resultSentence").show();
+      $("#appropriateLanguage").text("Ruby");
+    }
+    else {
+      $("#resultSentence").show();
+      $("#appropriateLanguage").text("C#");
+    }
+      
     
+
   });
 });
-
