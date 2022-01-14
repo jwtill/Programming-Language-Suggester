@@ -1,6 +1,9 @@
 #resultSentence {
   display: none;
 }
+#reset {
+  display: none;
+}
 .container {
   padding: 50px;
 }
