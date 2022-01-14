@@ -1,3 +1,11 @@
 #resultSentence {
   display: none;
 }
+.container {
+  padding: 50px;
+}
+
+.form-row {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
