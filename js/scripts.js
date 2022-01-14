@@ -71,17 +71,20 @@ $(document).ready(function() {
     const result = add(experience, frontBack, location, hat1, hat2, hat3, hat4);
     if (result <= 3) {
       console.log("js");
+      $("#userInfo").hide();
       $("#resultSentence").show();
-      $("#appropriateLanguage").text("Javascript");
+      $("#appropriateLanguage").text("Javascript ");
     }
     else if (result > 3 && result < 8)
     {
+      $("#userInfo").hide();
       $("#resultSentence").show();
-      $("#appropriateLanguage").text("Ruby");
+      $("#appropriateLanguage").text("Ruby ");
     }
     else {
+      $("#userInfo").hide();
       $("#resultSentence").show();
-      $("#appropriateLanguage").text("C#");
+      $("#appropriateLanguage").text("C# ");
     }
       
     
