@@ -10,87 +10,67 @@
 <body>
   <div class="container">
     <h1>Programming Language Suggester</h1>
-    
-      
-        <form id="userInfo">
-
-          
-          <div class="form-row">
-            <div class="col-6">
-            <label for="name">Name:</label>
-            <input id="name" class="form-control" type="text" placeholder = "Enter your name here.">
-            </div>
-          
-            <div class="col-6">
-              <label for="favoriteAnimal">Favorite Animal:</label>
-              <input id="favoriteAnimal" class="form-control" type="text" placeholder = "Enter your favorite animal.">
-            </div>
-          </div>
-
-          <div class="form-row">
-            <div class="col-6">
-              <h4>How much experience do you have?</h4>
-              <input type="radio" id="aLittle" name="experience" value="1" checked="checked">
-              <label for="experience">A Little</label><br>
-              <input type="radio" id="aLot" name="experience" value="2">
-              <label for="experience">A Lot</label><br>
-            </div>
-              <div class = "col-6">
-              <h4>Front or Back End?</h4>
-              <input type="radio" id="frontEnd" name="where" value="1" checked = "checked">
-              <label for="where">Front-end</label><br>
-              <input type="radio" id="backEnd" name="where" value="2">
-              <label for="where">Back End</label><br>
-            </div>
-          </div>
-          
-          <div class="form-group">
-          <label for="cities">Which city would you like to move to/do you already live in?</label>
-          <select name="cities" id="location">
-            <option value="1">New York</option>
-            <option value="2">Mountain View</option>
-            <option value="3">Seattle</option>
-            <option value="4">San Francisco</option>
-            <option value="5">Washington</option>
-          </select>
-          </div>  
-
-          <div class = "form-group">
-            
-            <div class = "form-check form-check-inline">
-              <input class="form-check-input" type="checkbox" id="hat1" name="hat1" value="1">
-              <label class="form-check-label" for="hat1"> I prefer baseball caps</label><br>
-            </div>
-            <div class = "form-check form-check-inline">
-              <input class="form-check-input" type="checkbox" id="hat2" name="hat2" value="2">
-              <label class="form-check-label" for="hat2"> I prefer Fedoras</label><br>
-            </div>
-            <div class = "form-check form-check-inline">
-              <input class="form-check-input" type="checkbox" id="hat3" name="hat3" value="3">
-              <label class="form-check-label" for="hat3"> I prefer a beanie</label><br>
-            </div>
-            <div class = "form-check form-check-inline">
-              <input class="form-check-input" type="checkbox" id="hat4" name="hat4" value="0">
-              <label class="form-check-label" for="hat4"> I prefer to not wear a hat</label>
-            </div>
-            
-          </div>
-
-          
-          <button type="submit" class="btn btn-primary">Submit!</button>
-         
-
-          <button id = "reset" type="reset" class="btn btn-secondary">Reset</button>
-          
-        </form>
-
-        <div id = "resultSentence">
-          <p><span id = "username">  </span>: You are destined to become a <span id = "appropriateLanguage"> </span>developer!</p>          
+    <form id="userInfo">
+      <div class="form-row">
+        <div class="col-6">
+          <label for="name">Name:</label>
+          <input id="name" class="form-control" type="text" placeholder = "Enter your name here.">
         </div>
-
-      
-
-    
+        <div class="col-6">
+          <label for="favoriteAnimal">Favorite Animal:</label>
+          <input id="favoriteAnimal" class="form-control" type="text" placeholder = "Enter your favorite animal.">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="col-6">
+          <h4>How much experience do you have?</h4>
+          <input type="radio" id="aLittle" name="experience" value="1" checked="checked">
+          <label for="experience">A Little</label><br>
+          <input type="radio" id="aLot" name="experience" value="2">
+          <label for="experience">A Lot</label><br>
+        </div>
+        <div class = "col-6">
+          <h4>Front or Back End?</h4>
+          <input type="radio" id="frontEnd" name="where" value="1" checked = "checked">
+          <label for="where">Front-end</label><br>
+          <input type="radio" id="backEnd" name="where" value="2">
+          <label for="where">Back End</label><br>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="cities">Which city would you like to move to/do you already live in?</label>
+        <select name="cities" id="location">
+          <option value="1">New York</option>
+          <option value="2">Mountain View</option>
+          <option value="3">Seattle</option>
+          <option value="4">San Francisco</option>
+          <option value="5">Washington</option>
+        </select>
+      </div>  
+      <div class = "form-group">
+        <div class = "form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="hat1" name="hat1" value="1">
+          <label class="form-check-label" for="hat1"> I prefer baseball caps</label><br>
+        </div>
+        <div class = "form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="hat2" name="hat2" value="2">
+          <label class="form-check-label" for="hat2"> I prefer Fedoras</label><br>
+        </div>
+        <div class = "form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="hat3" name="hat3" value="3">
+          <label class="form-check-label" for="hat3"> I prefer a beanie</label><br>
+        </div>
+        <div class = "form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="hat4" name="hat4" value="0">
+          <label class="form-check-label" for="hat4"> I prefer to not wear a hat</label>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit!</button>
+      <button id = "reset" type="reset" class="btn btn-secondary">Reset</button>
+    </form>
+    <div id = "resultSentence">
+      <p><span id = "username">  </span>: You are destined to become a <span id = "appropriateLanguage"> </span>developer!</p>          
+    </div>      
   </div>
 </body>
 </html>
