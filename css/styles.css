@@ -1,8 +1,23 @@
+body {
+  background-color: aqua;
+}
 #resultSentence {
   display: none;
+  font-size: 20pt;
+  border: 1px solid purple;
+  margin-top: 100 px;
+  padding: 30px;
+  background-color:burlywood;
+}
+#resultSentence p {
+  text-align:center;
 }
 #reset {
   display: none;
+}
+
+#user-info {
+  margin-bottom: 10px;
 }
 .container {
   padding: 50px;

@@ -23,6 +23,7 @@ $(document).ready(function() {
   $("form#userInfo").submit(function(event) {
     event.preventDefault();
     const name = ($("#name").val());
+    const favoriteAnimal = $(("#favoriteAnimal").val());
     const experience = parseInt($("input:radio[name=experience]:checked").val());
     const frontBack = parseInt($("input:radio[name=where]:checked").val());
     const location = parseInt($("#location").val());
@@ -63,6 +64,7 @@ $(document).ready(function() {
       console.log("js");
       
       $("#resultSentence").show();
+      $("#username").text(name);
       $("#appropriateLanguage").text("Javascript ");
       $("#reset").show();
     }
@@ -70,15 +72,21 @@ $(document).ready(function() {
     {
       
       $("#resultSentence").show();
+      $("#username").text(name);
       $("#appropriateLanguage").text("Ruby ");
       $("#reset").show();
     }
     else {
   
       $("#resultSentence").show();
+      $("#username").text(name);
       $("#appropriateLanguage").text("C# ");
       $("#reset").show();
     }
+    $("#reset").click(function(){
+      $("#reset").hide();
+      $("#resultSentence").hide();
+    })
   });
 
   
